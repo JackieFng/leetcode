@@ -35,7 +35,7 @@ public class 两数之和 {
     }
 
     /**
-     * map
+     * 哈希
      *
      * @param nums
      * @param target
