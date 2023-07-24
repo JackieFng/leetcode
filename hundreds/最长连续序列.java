@@ -22,7 +22,7 @@ public class 最长连续序列 {
         }
         int longestStreak = 0;
         for (int num : num_set) {
-            //每个数若存在前驱数，则表明该数不是最长连续序列的第一个数，应该跳过
+            //每个数若存在前驱数，则表明该数不是最长连续序列的第一个数，即这个数不是连续序列的第一个数
             if (!num_set.contains(num - 1)) {
                 int currentNum = num;
                 int currentStreak = 1;
