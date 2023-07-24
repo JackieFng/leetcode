@@ -15,16 +15,17 @@ public class 盛水最多的容器 {
      * @param height
      * @return
      */
-    public int maxArea(int[] height) {
-        int left = 0, right = height.length - 1, maxArea = 0;
+    public static int maxArea(int[] height) {
+        int left = 0, right = height.length - 1, ans = 0;
         while (left < right) {
-            maxArea = Math.min(height[left], height[right]) * (right - left);
+            int area = Math.min(height[left], height[right]) * (right - left);
+            ans = Math.max(ans, area);
             if (height[left] <= height[right]) {
                 left++;
             } else {
-                right++;
+                right--;
             }
         }
-        return maxArea;
+        return ans;
     }
 }
