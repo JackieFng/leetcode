@@ -11,7 +11,7 @@ import java.util.Map;
 public class 两数之和 {
 
     /**
-     * 双指针法
+     * 双指针-碰撞指针
      *
      * @param nums
      * @param target

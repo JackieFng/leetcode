@@ -9,7 +9,6 @@ import java.util.*;
 public class 字母异位词分组 {
 
     /**
-     * 类似于两数之和
      * 关键点 排序+哈希表
      * 同一个List中的元素都是由相同的字母组成，遍历strs数组时将所有str排序，将排序后的str作为key，未排序的str作为list中的元素
      * 通过哈希表在循环结束后就能找到同一个key下的所有词组
